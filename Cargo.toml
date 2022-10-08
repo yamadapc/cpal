@@ -43,10 +43,10 @@ core-foundation-sys = "0.8.2" # For linking to CoreFoundation.framework and hand
 mach = "0.3" # For access to mach_timebase type.
 
 [target.'cfg(target_os = "macos")'.dependencies]
-coreaudio-rs = { version = "0.10", default-features = false, features = ["audio_unit", "core_audio"] }
+coreaudio-rs = { version = "0.11", default-features = false, features = ["audio_unit", "core_audio"] }
 
 [target.'cfg(target_os = "ios")'.dependencies]
-coreaudio-rs = { version = "0.10", default-features = false, features = ["audio_unit", "core_audio", "audio_toolbox"] }
+coreaudio-rs = { version = "0.11", default-features = false, features = ["audio_unit", "core_audio", "audio_toolbox"] }
 
 [target.'cfg(target_os = "emscripten")'.dependencies]
 stdweb = { version = "0.4.20", default-features = false }
